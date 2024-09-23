@@ -251,6 +251,11 @@ window_width = 600
 window_height = 400
 root.geometry(f"{window_width}x{window_height}")
 bg_color = "#0CF5EA"
+logo_image = Image.open("./logo.png")
+logo_image = logo_image.resize((75, 75))
+logo_tk_image = ImageTk.PhotoImage(logo_image)
+logo_label = ttk.Label(root, image=logo_tk_image, background=bg_color)
+logo_label.place(x=2, y=2, anchor='nw')
 
 # Configure background color
 style = ttk.Style()
