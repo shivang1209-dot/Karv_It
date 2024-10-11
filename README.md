@@ -26,3 +26,5 @@ To run this application, you need to have Python installed along with the follow
    ```bash
    git clone https://github.com/shivang1209-dot/Karv_It.git
    cd Karv_It
+   pip install -r requirements.txt
+   python main.py
