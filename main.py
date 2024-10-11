@@ -15,7 +15,7 @@ def run_subprocess(command):
 
 def disk_imager():
     """Launch the Disk Imager tool."""
-    threading.Thread(target=run_subprocess, args=(['python', './usb_image_gui.py'],)).start()
+    threading.Thread(target=run_subprocess, args=(['python', './disk_imager_gui.py'],)).start()
     print("Launching Disk Imager...")
 
 
@@ -33,7 +33,7 @@ def create_main_window():
     root.configure(bg="#0CF5EA")
 
     # Load logo image
-    logo_image = Image.open("./logo.png").resize((75, 75))
+    logo_image = Image.open("Resources/KarvIt_Logo.png").resize((100, 55))
     logo_tk_image = ImageTk.PhotoImage(logo_image)
     logo_label = ttk.Label(root, image=logo_tk_image, background="#0CF5EA")
     logo_label.place(x=2, y=2, anchor='nw')
