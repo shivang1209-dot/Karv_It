@@ -28,3 +28,5 @@ To run this application, you need to have Python installed along with the follow
    cd Karv_It
    pip install -r requirements.txt
    python main.py
+
+2. A sample zipped disk image is present in the Resources folder, unzip it and you can use that file for extracting PNGs, and JPEGs. 
